@@ -51,6 +51,7 @@
 		09E09C081D65AFF00075AD9F /* UIColor+CL.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E09C001D65AFF00075AD9F /* UIColor+CL.m */; };
 		09E09C091D65AFF00075AD9F /* UIImage+CL.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E09C021D65AFF00075AD9F /* UIImage+CL.m */; };
 		09E09C0C1D65D9DE0075AD9F /* ESWRoomManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E09C0B1D65D9DE0075AD9F /* ESWRoomManager.m */; };
+		B62D617EE41367E6FBA86BE5 /* libPods-MobilitymyPractics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CA1545A65CA763C5AB8B385 /* libPods-MobilitymyPractics.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -155,6 +156,9 @@
 		09E09C021D65AFF00075AD9F /* UIImage+CL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CL.m"; sourceTree = "<group>"; };
 		09E09C0A1D65D9DE0075AD9F /* ESWRoomManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESWRoomManager.h; sourceTree = "<group>"; };
 		09E09C0B1D65D9DE0075AD9F /* ESWRoomManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESWRoomManager.m; sourceTree = "<group>"; };
+		3CA1545A65CA763C5AB8B385 /* libPods-MobilitymyPractics.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MobilitymyPractics.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		54569BD369CB1C40CBFAEF35 /* Pods-MobilitymyPractics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobilitymyPractics.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobilitymyPractics/Pods-MobilitymyPractics.release.xcconfig"; sourceTree = "<group>"; };
+		D60967DF0F68F008991F5EAB /* Pods-MobilitymyPractics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobilitymyPractics.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobilitymyPractics/Pods-MobilitymyPractics.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +168,7 @@
 			files = (
 				09E09BEE1D65AA2E0075AD9F /* libsqlite3.tbd in Frameworks */,
 				092A61C01D5996E000270862 /* libxml2.tbd in Frameworks */,
+				B62D617EE41367E6FBA86BE5 /* libPods-MobilitymyPractics.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +198,8 @@
 				098DFF031D5887A8002052CA /* MobilitymyPracticsTests */,
 				098DFF0E1D5887A8002052CA /* MobilitymyPracticsUITests */,
 				098DFEE81D5887A8002052CA /* Products */,
+				4BFAB554B1DC9DC14FB75446 /* Pods */,
+				1C07C9F473C5B2E4B9D61800 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -354,6 +361,23 @@
 			path = Misc;
 			sourceTree = "<group>";
 		};
+		1C07C9F473C5B2E4B9D61800 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CA1545A65CA763C5AB8B385 /* libPods-MobilitymyPractics.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4BFAB554B1DC9DC14FB75446 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D60967DF0F68F008991F5EAB /* Pods-MobilitymyPractics.debug.xcconfig */,
+				54569BD369CB1C40CBFAEF35 /* Pods-MobilitymyPractics.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -361,9 +385,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 098DFF141D5887A8002052CA /* Build configuration list for PBXNativeTarget "MobilitymyPractics" */;
 			buildPhases = (
+				4D41E807E0789CBF1FF98347 /* Check Pods Manifest.lock */,
 				098DFEE31D5887A8002052CA /* Sources */,
 				098DFEE41D5887A8002052CA /* Frameworks */,
 				098DFEE51D5887A8002052CA /* Resources */,
+				17554B2A306BE34547F59D20 /* Embed Pods Frameworks */,
+				463ED458B6D00FDD06AC06F3 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -480,6 +507,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17554B2A306BE34547F59D20 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MobilitymyPractics/Pods-MobilitymyPractics-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		463ED458B6D00FDD06AC06F3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MobilitymyPractics/Pods-MobilitymyPractics-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D41E807E0789CBF1FF98347 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		098DFEE31D5887A8002052CA /* Sources */ = {
@@ -659,6 +734,7 @@
 		};
 		098DFF151D5887A8002052CA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D60967DF0F68F008991F5EAB /* Pods-MobilitymyPractics.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
@@ -672,6 +748,7 @@
 		};
 		098DFF161D5887A8002052CA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54569BD369CB1C40CBFAEF35 /* Pods-MobilitymyPractics.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
