@@ -28,7 +28,7 @@
 
     userInfo =[UserInfo shareUserInfo];
     
-    [self updateprofileData];
+  //  [self updateprofileData];
 
     
     
