@@ -80,27 +80,29 @@
 {
     UIColor *selectedColor;
     
-//    switch ([[NSUserDefaults standardUserDefaults] integerForKey:BACKGROUND_THEME_VALUE])
-//    {
-//        case 0:
-//            selectedColor = [UIColor colorWithRed:.22 green:.6 blue:.79 alpha:1];
-//            break;
-//            
-//        case 1:
-//            selectedColor = [UIColor colorWithRed:.4 green:.6 blue:.23 alpha:1];
-//            break;
-//            
-//        case 2:
-//            selectedColor = [UIColor colorWithRed:.99 green:.4 blue:.24 alpha:1];
-//            break;
-//            
-//        case 3:
-//            selectedColor = [UIColor colorWithRed:.79 green:.21 blue:.4 alpha:1];
-//            break;
-//            
-//        default:
-//            break;
-//    }
+   // switch ([[NSUserDefaults standardUserDefaults] integerForKey:BACKGROUND_THEME_VALUE])
+    switch (0)
+
+    {
+        case 0:
+            selectedColor = [UIColor colorWithRed:.22 green:.6 blue:.79 alpha:1];
+            break;
+            
+        case 1:
+            selectedColor = [UIColor colorWithRed:.4 green:.6 blue:.23 alpha:1];
+            break;
+            
+        case 2:
+            selectedColor = [UIColor colorWithRed:.99 green:.4 blue:.24 alpha:1];
+            break;
+            
+        case 3:
+            selectedColor = [UIColor colorWithRed:.79 green:.21 blue:.4 alpha:1];
+            break;
+            
+        default:
+            break;
+    }
 
     //    DLog(@"mark date selected %@ -- %d",self.date, blnSelected);
     if([self.date isDateToday]){

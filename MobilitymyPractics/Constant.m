@@ -26,6 +26,8 @@ NSString *const EWS_REQUSET_URL = @"https://10.10.3.156/ews/exchange.asmx";
 NSString *const EWS_REQUSET_USERID_KEY = @"userNameKey";
 NSString *const EWS_USERS_PASSWORD_KEY =@"PasswordKey";
 
+NSString *const GET_DETAILS_BEACON_API = @"http://prithiviraj.vmokshagroup.com:9033/Search/Beacons";
+
 
 
 

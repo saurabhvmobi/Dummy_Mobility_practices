@@ -8,10 +8,12 @@
 
 #import "ViewController.h"
 #import "UserInfo.h"
-@interface ViewController ()
-{
-    UserInfo *userInfo;
+#import "Postman.h"
 
+@interface ViewController ()<postmanDelegate>
+{
+    UserInfo *userinfo;
+    Postman *postMan;
 }
 
 @property (weak, nonatomic) IBOutlet UILabel *fullNameLabel;
@@ -25,12 +27,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-
-    userInfo =[UserInfo shareUserInfo];
-    
+    userinfo = [UserInfo sharedUserInfo];
     [self updateprofileData];
-
-    
     
 }
 
@@ -56,9 +54,9 @@
 
 -(void)updateprofileData
 {
-    self.emailIDLabel.text = userInfo.emailIDValue;
-    self.fullNameLabel.text = userInfo.fullName;
-    self.corpIDLabel.text = userInfo.cropID;
+    self.emailIDLabel.text = userinfo.emailIDValue;
+    self.fullNameLabel.text = userinfo.fullName;
+    self.corpIDLabel.text = userinfo.cropID;
 
 
 }

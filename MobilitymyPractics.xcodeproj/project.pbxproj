@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		092A61C01D5996E000270862 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 092A61BF1D5996E000270862 /* libxml2.tbd */; };
+		0964DC761D66E11D00CD17C3 /* FreeSlotsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0964DC751D66E11D00CD17C3 /* FreeSlotsViewController.m */; };
+		0964DCC11D67187300CD17C3 /* RoomRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0964DCBE1D67187300CD17C3 /* RoomRecognizer.m */; };
+		0964DCC21D67187300CD17C3 /* RoomBeacon.m in Sources */ = {isa = PBXBuildFile; fileRef = 0964DCC01D67187300CD17C3 /* RoomBeacon.m */; };
+		0964DCF01D6718C600CD17C3 /* libkontakt-ios-sdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0964DCEF1D6718C600CD17C3 /* libkontakt-ios-sdk.a */; };
+		0964DCF31D671C1100CD17C3 /* Postman.m in Sources */ = {isa = PBXBuildFile; fileRef = 0964DCF21D671C1100CD17C3 /* Postman.m */; };
 		098DFEEC1D5887A8002052CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 098DFEEB1D5887A8002052CA /* main.m */; };
 		098DFEEF1D5887A8002052CA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 098DFEEE1D5887A8002052CA /* AppDelegate.m */; };
 		098DFEF21D5887A8002052CA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 098DFEF11D5887A8002052CA /* ViewController.m */; };
@@ -19,6 +24,11 @@
 		098DFF1E1D588EC2002052CA /* demoUser.plist in Resources */ = {isa = PBXBuildFile; fileRef = 098DFF1D1D588EC2002052CA /* demoUser.plist */; };
 		098DFF271D589B9C002052CA /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 098DFF261D589B9C002052CA /* UserInfo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		098DFF2A1D58BD3C002052CA /* ok2UpdateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 098DFF291D58BD3C002052CA /* ok2UpdateViewController.m */; };
+		09C1BECC1D6AB78400EB7F5B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C1BECB1D6AB78400EB7F5B /* CFNetwork.framework */; };
+		09C1BECD1D6AB79500EB7F5B /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C1BEC91D6AB6F700EB7F5B /* CoreFoundation.framework */; };
+		09C1BECE1D6AB79D00EB7F5B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C1BEC71D6AB65A00EB7F5B /* Foundation.framework */; };
+		09C1BED01D6AC0D800EB7F5B /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C1BECF1D6AC0D800EB7F5B /* CoreBluetooth.framework */; };
+		09C1BED21D6AC0E000EB7F5B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C1BED11D6AC0E000EB7F5B /* CoreLocation.framework */; };
 		09E09BA61D657D140075AD9F /* DashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E09BA51D657D140075AD9F /* DashboardViewController.m */; };
 		09E09BA91D6597970075AD9F /* BookARoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E09BA81D6597970075AD9F /* BookARoomViewController.m */; };
 		09E09BAE1D65984D0075AD9F /* HexColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E09BAB1D65984D0075AD9F /* HexColors.m */; };
@@ -51,6 +61,7 @@
 		09E09C081D65AFF00075AD9F /* UIColor+CL.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E09C001D65AFF00075AD9F /* UIColor+CL.m */; };
 		09E09C091D65AFF00075AD9F /* UIImage+CL.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E09C021D65AFF00075AD9F /* UIImage+CL.m */; };
 		09E09C0C1D65D9DE0075AD9F /* ESWRoomManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E09C0B1D65D9DE0075AD9F /* ESWRoomManager.m */; };
+		BEE5291C08332048AE3D6790 /* libPods-MobilitymyPractics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A81A7B53C4C7B1AC71A15D6 /* libPods-MobilitymyPractics.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +83,57 @@
 
 /* Begin PBXFileReference section */
 		092A61BF1D5996E000270862 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		0964DC741D66E11D00CD17C3 /* FreeSlotsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FreeSlotsViewController.h; sourceTree = "<group>"; };
+		0964DC751D66E11D00CD17C3 /* FreeSlotsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FreeSlotsViewController.m; sourceTree = "<group>"; };
+		0964DCBD1D67187300CD17C3 /* RoomRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoomRecognizer.h; sourceTree = "<group>"; };
+		0964DCBE1D67187300CD17C3 /* RoomRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomRecognizer.m; sourceTree = "<group>"; };
+		0964DCBF1D67187300CD17C3 /* RoomBeacon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoomBeacon.h; sourceTree = "<group>"; };
+		0964DCC01D67187300CD17C3 /* RoomBeacon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomBeacon.m; sourceTree = "<group>"; };
+		0964DCC51D6718C600CD17C3 /* KontaktSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KontaktSDK.h; sourceTree = "<group>"; };
+		0964DCC61D6718C600CD17C3 /* KTKAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKAction.h; sourceTree = "<group>"; };
+		0964DCC71D6718C600CD17C3 /* KTKActionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKActionManager.h; sourceTree = "<group>"; };
+		0964DCC81D6718C600CD17C3 /* KTKBeacon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKBeacon.h; sourceTree = "<group>"; };
+		0964DCC91D6718C600CD17C3 /* KTKBeaconDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKBeaconDevice.h; sourceTree = "<group>"; };
+		0964DCCA1D6718C600CD17C3 /* KTKBeaconDeviceV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKBeaconDeviceV2.h; sourceTree = "<group>"; };
+		0964DCCB1D6718C600CD17C3 /* KTKBeaconManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKBeaconManager.h; sourceTree = "<group>"; };
+		0964DCCC1D6718C600CD17C3 /* KTKBeaconProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKBeaconProfile.h; sourceTree = "<group>"; };
+		0964DCCD1D6718C600CD17C3 /* KTKBluetoothDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKBluetoothDevice.h; sourceTree = "<group>"; };
+		0964DCCE1D6718C600CD17C3 /* KTKBluetoothManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKBluetoothManager.h; sourceTree = "<group>"; };
+		0964DCCF1D6718C600CD17C3 /* KTKCharacteristicDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKCharacteristicDescriptor.h; sourceTree = "<group>"; };
+		0964DCD01D6718C600CD17C3 /* KTKClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKClient.h; sourceTree = "<group>"; };
+		0964DCD11D6718C600CD17C3 /* KTKCloudBeacon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKCloudBeacon.h; sourceTree = "<group>"; };
+		0964DCD21D6718C600CD17C3 /* KTKCompany.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKCompany.h; sourceTree = "<group>"; };
+		0964DCD31D6718C600CD17C3 /* KTKConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKConverter.h; sourceTree = "<group>"; };
+		0964DCD41D6718C600CD17C3 /* KTKDataTransferObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKDataTransferObject.h; sourceTree = "<group>"; };
+		0964DCD51D6718C600CD17C3 /* KTKDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKDescriptor.h; sourceTree = "<group>"; };
+		0964DCD61D6718C600CD17C3 /* KTKDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKDevice.h; sourceTree = "<group>"; };
+		0964DCD71D6718C600CD17C3 /* KTKError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKError.h; sourceTree = "<group>"; };
+		0964DCD81D6718C600CD17C3 /* KTKFirmware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKFirmware.h; sourceTree = "<group>"; };
+		0964DCD91D6718C600CD17C3 /* KTKHexConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKHexConverter.h; sourceTree = "<group>"; };
+		0964DCDA1D6718C600CD17C3 /* KTKLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKLocationManager.h; sourceTree = "<group>"; };
+		0964DCDB1D6718C600CD17C3 /* KTKManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKManager.h; sourceTree = "<group>"; };
+		0964DCDC1D6718C600CD17C3 /* KTKNumberConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKNumberConverter.h; sourceTree = "<group>"; };
+		0964DCDD1D6718C600CD17C3 /* KTKNumberDiscreteConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKNumberDiscreteConverter.h; sourceTree = "<group>"; };
+		0964DCDE1D6718C600CD17C3 /* KTKNumberLinearConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKNumberLinearConverter.h; sourceTree = "<group>"; };
+		0964DCDF1D6718C600CD17C3 /* KTKPaging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKPaging.h; sourceTree = "<group>"; };
+		0964DCE01D6718C600CD17C3 /* KTKPagingBeacons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKPagingBeacons.h; sourceTree = "<group>"; };
+		0964DCE11D6718C600CD17C3 /* KTKPagingConfigs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKPagingConfigs.h; sourceTree = "<group>"; };
+		0964DCE21D6718C600CD17C3 /* KTKPagingDevices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKPagingDevices.h; sourceTree = "<group>"; };
+		0964DCE31D6718C600CD17C3 /* KTKPagingVenues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKPagingVenues.h; sourceTree = "<group>"; };
+		0964DCE41D6718C600CD17C3 /* KTKPublicAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKPublicAction.h; sourceTree = "<group>"; };
+		0964DCE51D6718C600CD17C3 /* KTKPublicBeacon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKPublicBeacon.h; sourceTree = "<group>"; };
+		0964DCE61D6718C600CD17C3 /* KTKPublicVenue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKPublicVenue.h; sourceTree = "<group>"; };
+		0964DCE71D6718C600CD17C3 /* KTKRegion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKRegion.h; sourceTree = "<group>"; };
+		0964DCE81D6718C600CD17C3 /* KTKServiceDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKServiceDescriptor.h; sourceTree = "<group>"; };
+		0964DCE91D6718C600CD17C3 /* KTKStringConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKStringConverter.h; sourceTree = "<group>"; };
+		0964DCEA1D6718C600CD17C3 /* KTKSubordinate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKSubordinate.h; sourceTree = "<group>"; };
+		0964DCEB1D6718C600CD17C3 /* KTKUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKUser.h; sourceTree = "<group>"; };
+		0964DCEC1D6718C600CD17C3 /* KTKUUIDConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKUUIDConverter.h; sourceTree = "<group>"; };
+		0964DCED1D6718C600CD17C3 /* KTKVenue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKVenue.h; sourceTree = "<group>"; };
+		0964DCEE1D6718C600CD17C3 /* KTKVenueBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKVenueBase.h; sourceTree = "<group>"; };
+		0964DCEF1D6718C600CD17C3 /* libkontakt-ios-sdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libkontakt-ios-sdk.a"; sourceTree = "<group>"; };
+		0964DCF11D671C1100CD17C3 /* Postman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Postman.h; sourceTree = "<group>"; };
+		0964DCF21D671C1100CD17C3 /* Postman.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Postman.m; sourceTree = "<group>"; };
 		098DFEE71D5887A8002052CA /* MobilitymyPractics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobilitymyPractics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		098DFEEB1D5887A8002052CA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		098DFEED1D5887A8002052CA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -93,6 +155,11 @@
 		098DFF261D589B9C002052CA /* UserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfo.m; sourceTree = "<group>"; };
 		098DFF281D58BD3C002052CA /* ok2UpdateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ok2UpdateViewController.h; sourceTree = "<group>"; };
 		098DFF291D58BD3C002052CA /* ok2UpdateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ok2UpdateViewController.m; sourceTree = "<group>"; };
+		09C1BEC71D6AB65A00EB7F5B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		09C1BEC91D6AB6F700EB7F5B /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		09C1BECB1D6AB78400EB7F5B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		09C1BECF1D6AC0D800EB7F5B /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		09C1BED11D6AC0E000EB7F5B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		09E09BA41D657D140075AD9F /* DashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DashboardViewController.h; sourceTree = "<group>"; };
 		09E09BA51D657D140075AD9F /* DashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DashboardViewController.m; sourceTree = "<group>"; };
 		09E09BA71D6597970075AD9F /* BookARoomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookARoomViewController.h; sourceTree = "<group>"; };
@@ -155,6 +222,9 @@
 		09E09C021D65AFF00075AD9F /* UIImage+CL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CL.m"; sourceTree = "<group>"; };
 		09E09C0A1D65D9DE0075AD9F /* ESWRoomManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESWRoomManager.h; sourceTree = "<group>"; };
 		09E09C0B1D65D9DE0075AD9F /* ESWRoomManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESWRoomManager.m; sourceTree = "<group>"; };
+		0A81A7B53C4C7B1AC71A15D6 /* libPods-MobilitymyPractics.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MobilitymyPractics.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CAFA9D99C2007C77B95033F /* Pods-MobilitymyPractics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobilitymyPractics.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobilitymyPractics/Pods-MobilitymyPractics.release.xcconfig"; sourceTree = "<group>"; };
+		C9891364562E0149E6E4B0A5 /* Pods-MobilitymyPractics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobilitymyPractics.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobilitymyPractics/Pods-MobilitymyPractics.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,8 +232,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09C1BED21D6AC0E000EB7F5B /* CoreLocation.framework in Frameworks */,
+				09C1BED01D6AC0D800EB7F5B /* CoreBluetooth.framework in Frameworks */,
+				09C1BECE1D6AB79D00EB7F5B /* Foundation.framework in Frameworks */,
+				09C1BECD1D6AB79500EB7F5B /* CoreFoundation.framework in Frameworks */,
+				09C1BECC1D6AB78400EB7F5B /* CFNetwork.framework in Frameworks */,
+				0964DCF01D6718C600CD17C3 /* libkontakt-ios-sdk.a in Frameworks */,
 				09E09BEE1D65AA2E0075AD9F /* libsqlite3.tbd in Frameworks */,
 				092A61C01D5996E000270862 /* libxml2.tbd in Frameworks */,
+				BEE5291C08332048AE3D6790 /* libPods-MobilitymyPractics.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +261,75 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0964DCBC1D67185700CD17C3 /* Becons */ = {
+			isa = PBXGroup;
+			children = (
+				0964DCBD1D67187300CD17C3 /* RoomRecognizer.h */,
+				0964DCBE1D67187300CD17C3 /* RoomRecognizer.m */,
+				0964DCBF1D67187300CD17C3 /* RoomBeacon.h */,
+				0964DCC01D67187300CD17C3 /* RoomBeacon.m */,
+			);
+			name = Becons;
+			sourceTree = "<group>";
+		};
+		0964DCC31D6718C600CD17C3 /* KontaktSDK */ = {
+			isa = PBXGroup;
+			children = (
+				0964DCC41D6718C600CD17C3 /* Headers */,
+				0964DCEF1D6718C600CD17C3 /* libkontakt-ios-sdk.a */,
+			);
+			path = KontaktSDK;
+			sourceTree = "<group>";
+		};
+		0964DCC41D6718C600CD17C3 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				0964DCC51D6718C600CD17C3 /* KontaktSDK.h */,
+				0964DCC61D6718C600CD17C3 /* KTKAction.h */,
+				0964DCC71D6718C600CD17C3 /* KTKActionManager.h */,
+				0964DCC81D6718C600CD17C3 /* KTKBeacon.h */,
+				0964DCC91D6718C600CD17C3 /* KTKBeaconDevice.h */,
+				0964DCCA1D6718C600CD17C3 /* KTKBeaconDeviceV2.h */,
+				0964DCCB1D6718C600CD17C3 /* KTKBeaconManager.h */,
+				0964DCCC1D6718C600CD17C3 /* KTKBeaconProfile.h */,
+				0964DCCD1D6718C600CD17C3 /* KTKBluetoothDevice.h */,
+				0964DCCE1D6718C600CD17C3 /* KTKBluetoothManager.h */,
+				0964DCCF1D6718C600CD17C3 /* KTKCharacteristicDescriptor.h */,
+				0964DCD01D6718C600CD17C3 /* KTKClient.h */,
+				0964DCD11D6718C600CD17C3 /* KTKCloudBeacon.h */,
+				0964DCD21D6718C600CD17C3 /* KTKCompany.h */,
+				0964DCD31D6718C600CD17C3 /* KTKConverter.h */,
+				0964DCD41D6718C600CD17C3 /* KTKDataTransferObject.h */,
+				0964DCD51D6718C600CD17C3 /* KTKDescriptor.h */,
+				0964DCD61D6718C600CD17C3 /* KTKDevice.h */,
+				0964DCD71D6718C600CD17C3 /* KTKError.h */,
+				0964DCD81D6718C600CD17C3 /* KTKFirmware.h */,
+				0964DCD91D6718C600CD17C3 /* KTKHexConverter.h */,
+				0964DCDA1D6718C600CD17C3 /* KTKLocationManager.h */,
+				0964DCDB1D6718C600CD17C3 /* KTKManager.h */,
+				0964DCDC1D6718C600CD17C3 /* KTKNumberConverter.h */,
+				0964DCDD1D6718C600CD17C3 /* KTKNumberDiscreteConverter.h */,
+				0964DCDE1D6718C600CD17C3 /* KTKNumberLinearConverter.h */,
+				0964DCDF1D6718C600CD17C3 /* KTKPaging.h */,
+				0964DCE01D6718C600CD17C3 /* KTKPagingBeacons.h */,
+				0964DCE11D6718C600CD17C3 /* KTKPagingConfigs.h */,
+				0964DCE21D6718C600CD17C3 /* KTKPagingDevices.h */,
+				0964DCE31D6718C600CD17C3 /* KTKPagingVenues.h */,
+				0964DCE41D6718C600CD17C3 /* KTKPublicAction.h */,
+				0964DCE51D6718C600CD17C3 /* KTKPublicBeacon.h */,
+				0964DCE61D6718C600CD17C3 /* KTKPublicVenue.h */,
+				0964DCE71D6718C600CD17C3 /* KTKRegion.h */,
+				0964DCE81D6718C600CD17C3 /* KTKServiceDescriptor.h */,
+				0964DCE91D6718C600CD17C3 /* KTKStringConverter.h */,
+				0964DCEA1D6718C600CD17C3 /* KTKSubordinate.h */,
+				0964DCEB1D6718C600CD17C3 /* KTKUser.h */,
+				0964DCEC1D6718C600CD17C3 /* KTKUUIDConverter.h */,
+				0964DCED1D6718C600CD17C3 /* KTKVenue.h */,
+				0964DCEE1D6718C600CD17C3 /* KTKVenueBase.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
 		098DFEDE1D5887A8002052CA = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +339,8 @@
 				098DFF031D5887A8002052CA /* MobilitymyPracticsTests */,
 				098DFF0E1D5887A8002052CA /* MobilitymyPracticsUITests */,
 				098DFEE81D5887A8002052CA /* Products */,
+				43267440B021D6AB3CD66852 /* Pods */,
+				EE8C9DDDFCD92A4277DACD24 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -219,6 +367,8 @@
 				098DFEF11D5887A8002052CA /* ViewController.m */,
 				098DFF251D589B9C002052CA /* UserInfo.h */,
 				098DFF261D589B9C002052CA /* UserInfo.m */,
+				0964DCF11D671C1100CD17C3 /* Postman.h */,
+				0964DCF21D671C1100CD17C3 /* Postman.m */,
 				09E09BB01D6598770075AD9F /* CalendarEvent.h */,
 				09E09BB11D6598770075AD9F /* CalendarEvent.m */,
 				09E09BB31D65A9150075AD9F /* BookARoom */,
@@ -267,10 +417,14 @@
 		09E09BB31D65A9150075AD9F /* BookARoom */ = {
 			isa = PBXGroup;
 			children = (
+				0964DCC31D6718C600CD17C3 /* KontaktSDK */,
+				0964DCBC1D67185700CD17C3 /* Becons */,
 				09E09BF31D65AFF00075AD9F /* CLWeeklyCalendarViewSourceCode */,
 				09E09BEF1D65AABC0075AD9F /* CustomEWS */,
 				09E09BDE1D65A9B80075AD9F /* MeetingViewController.h */,
 				09E09BDF1D65A9B80075AD9F /* MeetingViewController.m */,
+				0964DC741D66E11D00CD17C3 /* FreeSlotsViewController.h */,
+				0964DC751D66E11D00CD17C3 /* FreeSlotsViewController.m */,
 				09E09BE01D65A9B80075AD9F /* MyEventModel.h */,
 				09E09BE11D65A9B80075AD9F /* MyEventModel.m */,
 				09E09BE41D65A9B80075AD9F /* PasswordManager.h */,
@@ -354,6 +508,28 @@
 			path = Misc;
 			sourceTree = "<group>";
 		};
+		43267440B021D6AB3CD66852 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C9891364562E0149E6E4B0A5 /* Pods-MobilitymyPractics.debug.xcconfig */,
+				0CAFA9D99C2007C77B95033F /* Pods-MobilitymyPractics.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EE8C9DDDFCD92A4277DACD24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09C1BED11D6AC0E000EB7F5B /* CoreLocation.framework */,
+				09C1BECF1D6AC0D800EB7F5B /* CoreBluetooth.framework */,
+				09C1BECB1D6AB78400EB7F5B /* CFNetwork.framework */,
+				09C1BEC91D6AB6F700EB7F5B /* CoreFoundation.framework */,
+				09C1BEC71D6AB65A00EB7F5B /* Foundation.framework */,
+				0A81A7B53C4C7B1AC71A15D6 /* libPods-MobilitymyPractics.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -361,9 +537,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 098DFF141D5887A8002052CA /* Build configuration list for PBXNativeTarget "MobilitymyPractics" */;
 			buildPhases = (
+				CB66C9731DD7AB17E29BB40C /* Check Pods Manifest.lock */,
 				098DFEE31D5887A8002052CA /* Sources */,
 				098DFEE41D5887A8002052CA /* Frameworks */,
 				098DFEE51D5887A8002052CA /* Resources */,
+				E1F66A39E9596A061F1A82DB /* Embed Pods Frameworks */,
+				5F2908F50E6CE39A7B9AB643 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -481,6 +660,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5F2908F50E6CE39A7B9AB643 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MobilitymyPractics/Pods-MobilitymyPractics-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB66C9731DD7AB17E29BB40C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E1F66A39E9596A061F1A82DB /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MobilitymyPractics/Pods-MobilitymyPractics-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		098DFEE31D5887A8002052CA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -498,6 +725,7 @@
 				09E09BD91D65A99C0075AD9F /* t.m in Sources */,
 				09E09BE91D65A9B80075AD9F /* MyEventModel.m in Sources */,
 				09E09C071D65AFF00075AD9F /* NSDictionary+CL.m in Sources */,
+				0964DCF31D671C1100CD17C3 /* Postman.m in Sources */,
 				09E09BDD1D65A99C0075AD9F /* xsd.m in Sources */,
 				098DFF2A1D58BD3C002052CA /* ok2UpdateViewController.m in Sources */,
 				098DFEF21D5887A8002052CA /* ViewController.m in Sources */,
@@ -508,13 +736,16 @@
 				09E09BEA1D65A9B80075AD9F /* RoomManager.m in Sources */,
 				09E09BDB1D65A99C0075AD9F /* USGlobals.m in Sources */,
 				09E09BC31D65A9540075AD9F /* ESWPropertyCreater.m in Sources */,
+				0964DC761D66E11D00CD17C3 /* FreeSlotsViewController.m in Sources */,
 				09E09C051D65AFF00075AD9F /* DayTitleLabel.m in Sources */,
 				098DFEEF1D5887A8002052CA /* AppDelegate.m in Sources */,
 				09E09C041D65AFF00075AD9F /* DailyCalendarView.m in Sources */,
+				0964DCC21D67187300CD17C3 /* RoomBeacon.m in Sources */,
 				09E09BE81D65A9B80075AD9F /* MeetingViewController.m in Sources */,
 				09E09BAF1D65984D0075AD9F /* Constant.m in Sources */,
 				09E09BBD1D65A93F0075AD9F /* NSDateFormatter+Locale.m in Sources */,
 				09E09C031D65AFF00075AD9F /* CLWeeklyCalendarView.m in Sources */,
+				0964DCC11D67187300CD17C3 /* RoomRecognizer.m in Sources */,
 				09E09BEB1D65A9B80075AD9F /* PasswordManager.m in Sources */,
 				09E09BF21D65AB390075AD9F /* ContactDetails.m in Sources */,
 				098DFEEC1D5887A8002052CA /* main.m in Sources */,
@@ -659,12 +890,18 @@
 		};
 		098DFF151D5887A8002052CA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9891364562E0149E6E4B0A5 /* Pods-MobilitymyPractics.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = MobilitymyPractics/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = /usr/include/libxml2;
+				LIBRARY_SEARCH_PATHS = (
+					/usr/include/libxml2,
+					"$(PROJECT_DIR)/MobilitymyPractics/KontaktSDK",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.vmoksha.MobilitymyPractics;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -672,12 +909,18 @@
 		};
 		098DFF161D5887A8002052CA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CAFA9D99C2007C77B95033F /* Pods-MobilitymyPractics.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = MobilitymyPractics/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = /usr/include/libxml2;
+				LIBRARY_SEARCH_PATHS = (
+					/usr/include/libxml2,
+					"$(PROJECT_DIR)/MobilitymyPractics/KontaktSDK",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.vmoksha.MobilitymyPractics;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

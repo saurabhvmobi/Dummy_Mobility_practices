@@ -29,7 +29,7 @@
 @property (strong, nonatomic) NSString *appStoreURL;
 
 
-+(instancetype)shareUserInfo;
++ (instancetype)sharedUserInfo;
 -(NSDictionary *)getServerConfig;
 
 @end

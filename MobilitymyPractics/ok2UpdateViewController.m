@@ -47,7 +47,7 @@
 {
     NSString *currIosVersion = [[NSString alloc] initWithString:[[UIDevice currentDevice] systemVersion]];;
     NSString *model = [[NSString alloc] initWithString:[[UIDevice currentDevice] model]];
-    UserInfo *userInfo =[UserInfo shareUserInfo];
+    UserInfo *userInfo =[UserInfo sharedUserInfo];
     NSString *loc = userInfo.location;
     NSString *baseURL = userInfo.oKToUpdate;
 

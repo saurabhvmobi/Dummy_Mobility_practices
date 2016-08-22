@@ -13,9 +13,12 @@
 #import "CLWeeklyCalendarViewSourceCode/CLWeeklyCalendarView.h"
 #define MIN_TIME_SLOT_FOR_SEARCH 15*60
 #import "RoomModel.h"
-@interface MeetingViewController ()<RoomManagerDelegate,CLWeeklyCalendarViewDelegate>
+#import "PasswordManager.h"
+#import "FreeSlotsViewController.h"
+@interface MeetingViewController ()<RoomManagerDelegate,CLWeeklyCalendarViewDelegate,PasswordManagerDelegate>
 {
     RoomManager *roomManager;
+    PasswordManager *passwordManager;
     NSMutableArray *meetingListArr;
     NSString *userName;
     NSString *password;
@@ -25,6 +28,10 @@
     NSArray *emailIDsOfRoomsToCheck, *roomsToCheckModelArray;
     NSMutableArray *roomsAvailable;
     NSInteger selectedindex;
+    NSString *currentlyExcutingMethod;
+    NSString *selectedLocationEmailID;
+     UIAlertView *tryAgainAlert;
+
 }
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -61,7 +68,7 @@
         meetingListArr =[[NSMutableArray alloc]init];
     roomManager =[[RoomManager alloc]init];
     roomManager.delegate = self;
-   
+    [self setbuttonForSwitchMode];
      self.calenderViewContainer.layer.masksToBounds = YES;
     //self.todayDateLabel.text = [self dateFormetterMethod:[NSDate date]];
     
@@ -75,6 +82,12 @@
    // [self callExchangeServerApiForTodayMeeting];
 
 
+    passwordManager = [[PasswordManager alloc] init];
+    passwordManager.delegate = self;
+    [self getAllRoomsOfCurrentLocation];
+    
+    
+    
 }
 -(void)viewWillAppear:(BOOL)animated
 {
@@ -105,76 +118,77 @@
 
 - (IBAction)findAvailableRooms:(id)sender
 {
-//    currentlyExcutingMethod = @"findAvailableRooms:";
-//    if ([sender tag] == 100)
-//    {
-//        [self performSegueWithIdentifier:@"RoomFinderToFreeSlotsSegue" sender:nil];
-//        return;
-//    }
-//    
-//    //Start time can be 5 mins less than current time. Because we are round time to multiple of 5 mins (less than current time). So intervel can be till 300 seconds to be valid.
-//    
-//    NSTimeInterval intervel = [[NSDate date] timeIntervalSinceDate:startDate];
-//    if (intervel > 300)
-//    {
-//        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"ERROR_FOR_ALERT"
-//                                                            message:@"ALERT_MSG_SELECT_FUTURE_TIME"
-//                                                           delegate:self
-//                                                  cancelButtonTitle:@"OK"
-//                                                  otherButtonTitles: nil];
-//        [alertView show];
-//        
-//        [self resetView];
-//        
-//        return;
-//    }
-//    
-//    NSString *ewsRequestURL = [[NSUserDefaults standardUserDefaults] objectForKey:EWS_REQUSET_URL_KEY];
-//    if (ewsRequestURL == nil)
-//    {
+    currentlyExcutingMethod = @"findAvailableRooms:";
+    if ([sender tag] == 100)
+    {
+        [self performSegueWithIdentifier:@"RoomFinderToFreeSlotsSegue" sender:nil];
+        return;
+    }
+    
+    //Start time can be 5 mins less than current time. Because we are round time to multiple of 5 mins (less than current time). So intervel can be till 300 seconds to be valid.
+    
+    NSTimeInterval intervel = [[NSDate date] timeIntervalSinceDate:startDate];
+    if (intervel > 300)
+    {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"ERROR_FOR_ALERT"
+                                                            message:@"ALERT_MSG_SELECT_FUTURE_TIME"
+                                                           delegate:self
+                                                  cancelButtonTitle:@"OK"
+                                                  otherButtonTitles: nil];
+        [alertView show];
+        
+        [self resetView];
+        
+        return;
+    }
+    
+    NSString *ewsRequestURL = EWS_REQUSET_URL;
+    
+    if (ewsRequestURL == nil)
+    {
 //        AppDelegate *appDel = [UIApplication sharedApplication].delegate;
 //        [appDel getEWSRequestURL];
-//        
-//        if (!tryAgainAlert)
-//        {
-//            tryAgainAlert = [[UIAlertView alloc] initWithTitle:@"ERROR_FOR_ALERT"
-//                                                       message:@"ALERT_MSG_TRY_LATER"
-//                                                      delegate:self
-//                                             cancelButtonTitle:@"OK_FOR_ALERT"
-//                                             otherButtonTitles: nil];
-//            
-//        }
-//       
-//        [tryAgainAlert show];
-//    }
-//    
-//    if (![self timeWindowIsValid])
-//    {
-//        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"WARNING_TEXT"
-//                                                            message:@"ALERT_MSG_MINIMUM_TIME_SLOT"
-//                                                           delegate:self
-//                                                  cancelButtonTitle:@"OK"
-//                                                  otherButtonTitles:nil];
-//        [alertView show];
-//        NSLog(@"Time window is less than MIN Value");
-//        return;
-//    }
+        
+        if (!tryAgainAlert)
+        {
+            tryAgainAlert = [[UIAlertView alloc] initWithTitle:@"ERROR_FOR_ALERT"
+                                                       message:@"ALERT_MSG_TRY_LATER"
+                                                      delegate:self
+                                             cancelButtonTitle:@"OK_FOR_ALERT"
+                                             otherButtonTitles: nil];
+            
+        }
+       
+        [tryAgainAlert show];
+    }
     
-//    if (emailIDsOfRoomsToCheck.count == 0 | emailIDsOfRoomsToCheck == nil)
-//    {
-//        if (!tryAgainAlert)
-//        {
-//            tryAgainAlert = [[UIAlertView alloc] initWithTitle:@"ERROR_FOR_ALERT"
-//                                                       message:@"ALERT_MSG_TRY_LATER"
-//                                                      delegate:self
-//                                             cancelButtonTitle:@"OK"
-//                                             otherButtonTitles: nil];
-//            
-//        }
-//        [tryAgainAlert show];
-//        
-//        return;
-//    }
+    if (![self timeWindowIsValid])
+    {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"WARNING_TEXT"
+                                                            message:@"ALERT_MSG_MINIMUM_TIME_SLOT"
+                                                           delegate:self
+                                                  cancelButtonTitle:@"OK"
+                                                  otherButtonTitles:nil];
+        [alertView show];
+        NSLog(@"Time window is less than MIN Value");
+        return;
+    }
+    
+    if (emailIDsOfRoomsToCheck.count == 0 | emailIDsOfRoomsToCheck == nil)
+    {
+        if (!tryAgainAlert)
+        {
+            tryAgainAlert = [[UIAlertView alloc] initWithTitle:@"ERROR_FOR_ALERT"
+                                                       message:@"ALERT_MSG_TRY_LATER"
+                                                      delegate:self
+                                             cancelButtonTitle:@"OK"
+                                             otherButtonTitles: nil];
+            
+        }
+        [tryAgainAlert show];
+        
+        return;
+    }
     
     self.placeHolderLabel.hidden = YES;
     
@@ -189,6 +203,17 @@
     
 }
 
+- (BOOL)timeWindowIsValid
+{
+    NSTimeInterval timeIntervel = [startDate timeIntervalSinceDate:endDate];
+    
+    //If START_DATE is EARLIER than END_DATE, return value will be NEGATIVE
+    if (timeIntervel <= -MIN_TIME_SLOT_FOR_SEARCH)
+    {
+        return YES;
+    }
+    return NO;
+}
 
 
 
@@ -278,6 +303,43 @@
     self.serachRoomsButton.tag = 111;
     [self.serachRoomsButton setTitle:@"Search Meeting Room(s)" forState:(UIControlStateNormal)];
 }
+- (void)refershAvailableRooms
+{
+    [self findAvailableRooms:nil];
+}
+
+- (BOOL)checkForPrivteRoom:(RoomModel *)room
+{
+    return ([room.nameOfRoom rangeOfString:@" Priv "].location == NSNotFound);
+}
+
+- (void)setbuttonForSwitchMode
+{
+    self.serachRoomsButton.tag = 100;
+    [self.serachRoomsButton setTitle:@"Search by Meeting Room(s)" forState:(UIControlStateNormal)];
+}
+
+
+- (void)resetToInitialState
+{
+    [self resetView];
+    
+    [self.endTimeButton setTitle:@"(End.Time)" forState:(UIControlStateNormal)];
+    endDate = nil;
+    
+    [self.startTimeButton setTitle:@"Start.Time" forState:(UIControlStateNormal)];
+    startDate = nil;
+    
+    self.calendarView.selectedDate = [NSDate date];
+    [self.calendarView redrawToDate:[NSDate date]];
+    
+    [self setbuttonForSwitchMode];
+    self.serachRoomsButton.hidden = NO;
+}
+
+
+
+
 - (BOOL)isDateToday:(NSDate *)dateToTest
 {
     NSCalendar *calender = [NSCalendar currentCalendar];
@@ -471,6 +533,15 @@
     [self getAllRoomList];
 
 }
+
+
+- (void)dealloc
+{
+    NSLog(@"Deallocing RoonViewController");
+    [roomManager stopRecognize];
+}
+
+
 
 #pragma mark - Table view data source
 
@@ -675,7 +746,57 @@
     return nil;
 }
 
+- (void)roomManager:(RoomManager *)manager failedToGetPassword:(PasswordManager *)passwordManager
+{
+    if ([currentlyExcutingMethod isEqualToString:@"getAllRoomsOfCurrentLocation"])
+    {
+        [self.navigationController popViewControllerAnimated:YES];
+    }
+}
 
+- (void)roomManager:(RoomManager *)manager gotPassword:(PasswordManager *)passwordManager
+{
+    if ([currentlyExcutingMethod isEqualToString:@"getAllRoomsOfCurrentLocation"])
+    {
+        [self getAllRoomsOfCurrentLocation];
+        
+    }else if ([currentlyExcutingMethod isEqualToString:@"findAvailableRooms:"])
+    {
+        
+    }
+}
+- (void)getAllRoomsOfCurrentLocation
+{
+    //    if (![AFNetworkReachabilityManager sharedManager].isReachable)
+    //    {
+    //
+    //        return;
+    //    }
+    selectedLocationEmailID = EWS_REQUSET_EMAIL_ID;
+    
+    if (selectedLocationEmailID)
+    {
+        currentlyExcutingMethod = @"getAllRoomsOfCurrentLocation";
+        
+        if ([passwordManager passwordForUser] != nil)
+        {
+            [roomManager getRoomsForRoomList:selectedLocationEmailID];
+           // [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+        }else
+        {
+            [passwordManager showAlertWithDefaultMessage];
+        }
+        
+    }else
+    {
+//        officeLocationAlert = [[UIAlertView alloc] initWithTitle:STRING_FOR_LANGUAGE(@"Location.Required")
+//                                                         message:ALERT_MSG_SET_OFFICE_LOCATION
+//                                                        delegate:self
+//                                               cancelButtonTitle:OK_FOR_ALERT
+//                                               otherButtonTitles:nil];
+//        [officeLocationAlert show];
+    }
+}
 
 
 - (BOOL)validateLoginFields
@@ -735,7 +856,18 @@
 //    [hubHUD hide:YES afterDelay:2];
 //}
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"RoomFinderToFreeSlotsSegue"])
+    {
+        FreeSlotsViewController *freeSlotsVC = (FreeSlotsViewController *)segue.destinationViewController;
+        freeSlotsVC.roomManager = roomManager;
+        
+        NSSortDescriptor *sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"nameOfRoom" ascending:YES];
+        freeSlotsVC.rooms = [roomsToCheckModelArray sortedArrayUsingDescriptors:@[sortDescriptor]];
+    }
 
+}
 
 
 
