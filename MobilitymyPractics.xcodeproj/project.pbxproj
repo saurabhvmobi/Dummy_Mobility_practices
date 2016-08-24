@@ -51,6 +51,7 @@
 		09E09C081D65AFF00075AD9F /* UIColor+CL.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E09C001D65AFF00075AD9F /* UIColor+CL.m */; };
 		09E09C091D65AFF00075AD9F /* UIImage+CL.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E09C021D65AFF00075AD9F /* UIImage+CL.m */; };
 		09E09C0C1D65D9DE0075AD9F /* ESWRoomManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E09C0B1D65D9DE0075AD9F /* ESWRoomManager.m */; };
+		09F578811D6C5B83000CD0AE /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F578801D6C5B83000CD0AE /* NewsViewController.m */; };
 		B62D617EE41367E6FBA86BE5 /* libPods-MobilitymyPractics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CA1545A65CA763C5AB8B385 /* libPods-MobilitymyPractics.a */; };
 /* End PBXBuildFile section */
 
@@ -156,6 +157,8 @@
 		09E09C021D65AFF00075AD9F /* UIImage+CL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CL.m"; sourceTree = "<group>"; };
 		09E09C0A1D65D9DE0075AD9F /* ESWRoomManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESWRoomManager.h; sourceTree = "<group>"; };
 		09E09C0B1D65D9DE0075AD9F /* ESWRoomManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESWRoomManager.m; sourceTree = "<group>"; };
+		09F5787F1D6C5B83000CD0AE /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
+		09F578801D6C5B83000CD0AE /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
 		3CA1545A65CA763C5AB8B385 /* libPods-MobilitymyPractics.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MobilitymyPractics.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54569BD369CB1C40CBFAEF35 /* Pods-MobilitymyPractics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobilitymyPractics.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobilitymyPractics/Pods-MobilitymyPractics.release.xcconfig"; sourceTree = "<group>"; };
 		D60967DF0F68F008991F5EAB /* Pods-MobilitymyPractics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobilitymyPractics.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobilitymyPractics/Pods-MobilitymyPractics.debug.xcconfig"; sourceTree = "<group>"; };
@@ -231,6 +234,7 @@
 				09E09BB31D65A9150075AD9F /* BookARoom */,
 				098DFF281D58BD3C002052CA /* ok2UpdateViewController.h */,
 				098DFF291D58BD3C002052CA /* ok2UpdateViewController.m */,
+				09F5787E1D6C5B42000CD0AE /* News */,
 				09E09BA41D657D140075AD9F /* DashboardViewController.h */,
 				09E09BA51D657D140075AD9F /* DashboardViewController.m */,
 				09E09BA71D6597970075AD9F /* BookARoomViewController.h */,
@@ -359,6 +363,15 @@
 				09E09C021D65AFF00075AD9F /* UIImage+CL.m */,
 			);
 			path = Misc;
+			sourceTree = "<group>";
+		};
+		09F5787E1D6C5B42000CD0AE /* News */ = {
+			isa = PBXGroup;
+			children = (
+				09F5787F1D6C5B83000CD0AE /* NewsViewController.h */,
+				09F578801D6C5B83000CD0AE /* NewsViewController.m */,
+			);
+			name = News;
 			sourceTree = "<group>";
 		};
 		1C07C9F473C5B2E4B9D61800 /* Frameworks */ = {
@@ -576,6 +589,7 @@
 				09E09BDD1D65A99C0075AD9F /* xsd.m in Sources */,
 				098DFF2A1D58BD3C002052CA /* ok2UpdateViewController.m in Sources */,
 				098DFEF21D5887A8002052CA /* ViewController.m in Sources */,
+				09F578811D6C5B83000CD0AE /* NewsViewController.m in Sources */,
 				09E09BA91D6597970075AD9F /* BookARoomViewController.m in Sources */,
 				09E09BBC1D65A93F0075AD9F /* TimeWindow.m in Sources */,
 				09E09BDC1D65A99C0075AD9F /* xml.m in Sources */,
@@ -739,6 +753,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = MobilitymyPractics/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = /usr/include/libxml2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.vmoksha.MobilitymyPractics;
@@ -753,6 +768,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = MobilitymyPractics/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = /usr/include/libxml2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.vmoksha.MobilitymyPractics;

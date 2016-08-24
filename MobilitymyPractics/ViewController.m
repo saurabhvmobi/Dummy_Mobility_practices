@@ -28,7 +28,7 @@
 
     userInfo =[UserInfo shareUserInfo];
     
-  //  [self updateprofileData];
+    [self updateprofileData];
 
     
     
@@ -40,7 +40,35 @@
 }
 - (IBAction)upgradeButtonAction:(id)sender {
 
-    [self performSegueWithIdentifier:@"upgradeSegue" sender:self];
+    BOOL didOpen = [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@""]];
+    if (!didOpen)
+    {
+      UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:@"Alert !!" message:@"please install " preferredStyle:UIAlertControllerStyleAlert];
+        [alertControl addAction:[UIAlertAction actionWithTitle:@"Cancle" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+            
+        }]];
+        
+        [alertControl addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            // [self.navigationController popToRootViewControllerAnimated:YES];
+            
+        }]];
+        [self presentViewController:alertControl animated:YES completion:^{
+            
+        }];
+
+    
+    
+    
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    //[self performSegueWithIdentifier:@"upgradeSegue" sender:self];
 }
 - (IBAction)tipsButtonAction:(id)sender {
     [self performSegueWithIdentifier:@"tipsSegua" sender:self];
@@ -49,6 +77,9 @@
 
 - (IBAction)bookARoomButtonAction:(id)sender {
     [self performSegueWithIdentifier:@"bookaRoomSegua" sender:self];
+}
+- (IBAction)newsButtonAction:(id)sender {
+[self performSegueWithIdentifier:@"newsSegue" sender:self];
 }
 
 
