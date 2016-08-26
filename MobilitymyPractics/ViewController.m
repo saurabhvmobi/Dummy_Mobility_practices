@@ -49,6 +49,9 @@
     [self performSegueWithIdentifier:@"bookaRoomSegua" sender:self];
 }
 
+- (IBAction)newsButtonAction:(id)sender {
+    [self performSegueWithIdentifier:@"newsSegue" sender:self];
+}
 
 
 

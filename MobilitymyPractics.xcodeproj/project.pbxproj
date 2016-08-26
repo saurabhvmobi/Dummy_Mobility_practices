@@ -61,6 +61,11 @@
 		09E09C081D65AFF00075AD9F /* UIColor+CL.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E09C001D65AFF00075AD9F /* UIColor+CL.m */; };
 		09E09C091D65AFF00075AD9F /* UIImage+CL.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E09C021D65AFF00075AD9F /* UIImage+CL.m */; };
 		09E09C0C1D65D9DE0075AD9F /* ESWRoomManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E09C0B1D65D9DE0075AD9F /* ESWRoomManager.m */; };
+		86B0B64E1D6DA8C5006C6503 /* NewsCategoryFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B0B64D1D6DA8C5006C6503 /* NewsCategoryFetcher.m */; };
+		86B0B6541D6DAAC5006C6503 /* BadgeNoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B0B6511D6DAAC5006C6503 /* BadgeNoManager.m */; };
+		86B0B6551D6DAAC5006C6503 /* NewsCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B0B6531D6DAAC5006C6503 /* NewsCategoryModel.m */; };
+		86F1DA741D6EB6C2005ADD1B /* NewsContentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F1DA731D6EB6C2005ADD1B /* NewsContentModel.m */; };
+		86F1DA771D6EB741005ADD1B /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F1DA761D6EB741005ADD1B /* DBManager.m */; };
 		BEE5291C08332048AE3D6790 /* libPods-MobilitymyPractics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A81A7B53C4C7B1AC71A15D6 /* libPods-MobilitymyPractics.a */; };
 /* End PBXBuildFile section */
 
@@ -224,6 +229,16 @@
 		09E09C0B1D65D9DE0075AD9F /* ESWRoomManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESWRoomManager.m; sourceTree = "<group>"; };
 		0A81A7B53C4C7B1AC71A15D6 /* libPods-MobilitymyPractics.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MobilitymyPractics.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CAFA9D99C2007C77B95033F /* Pods-MobilitymyPractics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobilitymyPractics.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobilitymyPractics/Pods-MobilitymyPractics.release.xcconfig"; sourceTree = "<group>"; };
+		86B0B64C1D6DA8C5006C6503 /* NewsCategoryFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsCategoryFetcher.h; sourceTree = "<group>"; };
+		86B0B64D1D6DA8C5006C6503 /* NewsCategoryFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsCategoryFetcher.m; sourceTree = "<group>"; };
+		86B0B6501D6DAAC5006C6503 /* BadgeNoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BadgeNoManager.h; sourceTree = "<group>"; };
+		86B0B6511D6DAAC5006C6503 /* BadgeNoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BadgeNoManager.m; sourceTree = "<group>"; };
+		86B0B6521D6DAAC5006C6503 /* NewsCategoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsCategoryModel.h; sourceTree = "<group>"; };
+		86B0B6531D6DAAC5006C6503 /* NewsCategoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsCategoryModel.m; sourceTree = "<group>"; };
+		86F1DA721D6EB6C2005ADD1B /* NewsContentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsContentModel.h; sourceTree = "<group>"; };
+		86F1DA731D6EB6C2005ADD1B /* NewsContentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsContentModel.m; sourceTree = "<group>"; };
+		86F1DA751D6EB741005ADD1B /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		86F1DA761D6EB741005ADD1B /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
 		C9891364562E0149E6E4B0A5 /* Pods-MobilitymyPractics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobilitymyPractics.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobilitymyPractics/Pods-MobilitymyPractics.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -363,6 +378,8 @@
 				09E09BAB1D65984D0075AD9F /* HexColors.m */,
 				09E09BAC1D65984D0075AD9F /* Constant.h */,
 				09E09BAD1D65984D0075AD9F /* Constant.m */,
+				86F1DA751D6EB741005ADD1B /* DBManager.h */,
+				86F1DA761D6EB741005ADD1B /* DBManager.m */,
 				098DFEF01D5887A8002052CA /* ViewController.h */,
 				098DFEF11D5887A8002052CA /* ViewController.m */,
 				098DFF251D589B9C002052CA /* UserInfo.h */,
@@ -371,6 +388,7 @@
 				0964DCF21D671C1100CD17C3 /* Postman.m */,
 				09E09BB01D6598770075AD9F /* CalendarEvent.h */,
 				09E09BB11D6598770075AD9F /* CalendarEvent.m */,
+				86B0B64F1D6DA8D8006C6503 /* News */,
 				09E09BB31D65A9150075AD9F /* BookARoom */,
 				098DFF281D58BD3C002052CA /* ok2UpdateViewController.h */,
 				098DFF291D58BD3C002052CA /* ok2UpdateViewController.m */,
@@ -515,6 +533,21 @@
 				0CAFA9D99C2007C77B95033F /* Pods-MobilitymyPractics.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		86B0B64F1D6DA8D8006C6503 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				86F1DA721D6EB6C2005ADD1B /* NewsContentModel.h */,
+				86F1DA731D6EB6C2005ADD1B /* NewsContentModel.m */,
+				86B0B64C1D6DA8C5006C6503 /* NewsCategoryFetcher.h */,
+				86B0B64D1D6DA8C5006C6503 /* NewsCategoryFetcher.m */,
+				86B0B6501D6DAAC5006C6503 /* BadgeNoManager.h */,
+				86B0B6511D6DAAC5006C6503 /* BadgeNoManager.m */,
+				86B0B6521D6DAAC5006C6503 /* NewsCategoryModel.h */,
+				86B0B6531D6DAAC5006C6503 /* NewsCategoryModel.m */,
+			);
+			name = News;
 			sourceTree = "<group>";
 		};
 		EE8C9DDDFCD92A4277DACD24 /* Frameworks */ = {
@@ -713,11 +746,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86B0B6551D6DAAC5006C6503 /* NewsCategoryModel.m in Sources */,
 				09E09C081D65AFF00075AD9F /* UIColor+CL.m in Sources */,
 				09E09BB21D6598770075AD9F /* CalendarEvent.m in Sources */,
 				09E09BD81D65A99C0075AD9F /* NSDate+ISO8601Unparsing.m in Sources */,
 				09E09BD61D65A99C0075AD9F /* ExchangeWebService.m in Sources */,
+				86B0B64E1D6DA8C5006C6503 /* NewsCategoryFetcher.m in Sources */,
 				09E09BD71D65A99C0075AD9F /* NSDate+ISO8601Parsing.m in Sources */,
+				86F1DA771D6EB741005ADD1B /* DBManager.m in Sources */,
 				09E09BEC1D65A9B80075AD9F /* RoomModel.m in Sources */,
 				09E09C091D65AFF00075AD9F /* UIImage+CL.m in Sources */,
 				098DFF271D589B9C002052CA /* UserInfo.m in Sources */,
@@ -725,6 +761,7 @@
 				09E09BD91D65A99C0075AD9F /* t.m in Sources */,
 				09E09BE91D65A9B80075AD9F /* MyEventModel.m in Sources */,
 				09E09C071D65AFF00075AD9F /* NSDictionary+CL.m in Sources */,
+				86F1DA741D6EB6C2005ADD1B /* NewsContentModel.m in Sources */,
 				0964DCF31D671C1100CD17C3 /* Postman.m in Sources */,
 				09E09BDD1D65A99C0075AD9F /* xsd.m in Sources */,
 				098DFF2A1D58BD3C002052CA /* ok2UpdateViewController.m in Sources */,
@@ -737,6 +774,7 @@
 				09E09BDB1D65A99C0075AD9F /* USGlobals.m in Sources */,
 				09E09BC31D65A9540075AD9F /* ESWPropertyCreater.m in Sources */,
 				0964DC761D66E11D00CD17C3 /* FreeSlotsViewController.m in Sources */,
+				86B0B6541D6DAAC5006C6503 /* BadgeNoManager.m in Sources */,
 				09E09C051D65AFF00075AD9F /* DayTitleLabel.m in Sources */,
 				098DFEEF1D5887A8002052CA /* AppDelegate.m in Sources */,
 				09E09C041D65AFF00075AD9F /* DailyCalendarView.m in Sources */,

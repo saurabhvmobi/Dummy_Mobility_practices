@@ -122,42 +122,42 @@ static NSString * const kConfigurationKey = @"com.apple.configuration.managed";
     return _fullName;
 }
 
-//- (NSString *)alias
-//{
-//    _alias = [self getServerConfig][@"alias"];
-//    return _alias;
-//}
-//
-//- (NSArray *)tags
-//{
-//    _tags = [self getServerConfig][@"tags"];
-//    return _tags;
-//}
-//
-//- (NSString *)oKToUpdate
-//{
-//    _oKToUpdate = [self getServerConfig][@"ok2updateURL"];
-//    return _oKToUpdate;
-//}
-//
-//- (NSString *)iTSM_LDAP_BaseURL
-//{
-//    _iTSM_LDAP_BaseURL = [self getServerConfig][@"ucbAPIURL"];
-//    return _iTSM_LDAP_BaseURL;
-//}
-//
-//- (NSString *)applicationBaseURL
-//{
-//    _applicationBaseURL = [self getServerConfig][@"appAPIURL"];
-//    return _applicationBaseURL;
-//}
-//
-//- (NSString *)appStoreURL
-//{
-//    _appStoreURL = [self getServerConfig][@"appstoreURL"];
-//    return _appStoreURL;
-//}
-//
+- (NSString *)alias
+{
+    _alias = [self getServerConfig][@"alias"];
+    return _alias;
+}
+
+- (NSArray *)tags
+{
+    _tags = [self getServerConfig][@"tags"];
+    return _tags;
+}
+
+- (NSString *)oKToUpdate
+{
+    _oKToUpdate = [self getServerConfig][@"ok2updateURL"];
+    return _oKToUpdate;
+}
+
+- (NSString *)iTSM_LDAP_BaseURL
+{
+    _iTSM_LDAP_BaseURL = [self getServerConfig][@"ucbAPIURL"];
+    return _iTSM_LDAP_BaseURL;
+}
+
+- (NSString *)applicationBaseURL
+{
+    _applicationBaseURL = [self getServerConfig][@"appAPIURL"];
+    return _applicationBaseURL;
+}
+
+- (NSString *)appStoreURL
+{
+    _appStoreURL = [self getServerConfig][@"appstoreURL"];
+    return _appStoreURL;
+}
+
 - (void)userDefaultdValueChanged
 {
     serverConfig = [[NSUserDefaults standardUserDefaults] dictionaryForKey:kConfigurationKey];

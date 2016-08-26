@@ -101,6 +101,9 @@
                                         <state key="normal" title="news">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="newsButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1D7-QD-IVa"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BSs-VN-4SF">
                                         <rect key="frame" x="0.0" y="164" width="307" height="30"/>
@@ -187,6 +190,7 @@
                         <segue destination="u1T-BY-y5V" kind="show" identifier="upgradeSegue" id="me7-d1-HBU"/>
                         <segue destination="lGb-fi-4Mn" kind="show" identifier="tipsSegua" id="EIT-zh-J9B"/>
                         <segue destination="nen-Cc-D8p" kind="show" identifier="bookaRoomSegua" id="qfd-yZ-RAp"/>
+                        <segue destination="TSp-to-ocb" kind="show" identifier="newsSegue" id="GmF-uI-VSl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -432,6 +436,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2w3-LD-6IZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="454" y="700"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Wq4-XG-z0b">
+            <objects>
+                <viewController id="TSp-to-ocb" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zEo-fm-4je"/>
+                        <viewControllerLayoutGuide type="bottom" id="8qh-qJ-Iy3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cdK-fn-ChB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lAw-IM-OOG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="686" y="380"/>
         </scene>
         <!--Meeting View Controller-->
         <scene sceneID="gTx-rJ-YSi">
